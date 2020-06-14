@@ -1,1 +1,15 @@
-<p>quote works!</p>
+<div class="container-fluid">
+    <h1>Best Success Quotes</h1>
+    <div class="row">
+        <div class="col-md-6">
+         <div *ngFor='let quote of quotes ;let i = index'>
+            <div class="card">
+                <h3> {{quote.name}} </h3>
+                <div class="card">
+                    <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>   
+                </div>
+            </div>
+            <button (click)='toggleDetails(i)' class="bg-primary text-white">See More</button>
+        </div>
+    </div>
+</div>
