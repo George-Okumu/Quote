@@ -6,6 +6,9 @@
             <h3 class="text-center4">Here are a Few:</h3>
             <hr>
         <div *ngFor='let quote of quotes ;let i = index'>
+            <!--<p appHighlight *ngIf="highestUpvote() === quote.upvotes && quote.upvotes > 0">
+                {{ quote.quote }}
+              </p>-->
             <div class="detail">
                 <p class="quote"> {{quote.name}} </p>
                 <div>
