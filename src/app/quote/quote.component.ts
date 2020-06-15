@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-   new Quote('Time may change me, but I cant trace time.', 'George', 'Marisa Lacsa'),
-   new Quote('The way to get started is to quit talking and begin doing.', 'Becky Innocent', 'Walt Disney'),
-   new Quote('Tell me and I forget. Teach me and I remember. Involve me and I learn', 'Agnes Norman', 'Benjamin Franklin')
+   new Quote('Time may change me, but I cant trace time.', 'George', 'Marisa Lacsa', new Date(2020,7,10)),
+   new Quote('The way to get started is to quit talking and begin doing.', 'Becky Innocent', 'Walt Disney', new Date(2020,8,5)),
+   new Quote('Tell me and I forget. Teach me and I remember. Involve me and I learn', 'Agnes', 'Benjamin Franklin', new Date(2020,9,4))
   ];
 
   toggleDetails(index) {
@@ -43,26 +43,7 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].downvote += 1;
     }
   }
-  initNum: number;
-  finNum: number;
-  counter: number;
 
-  mostLiked() {
-    this.initNum = 0;
-    this.finNum = 0;
-    for (this.counter = 0; this.counter < this.quotes.length; this.counter++) {
-      this.finNum = this.quotes[this.counter].upvote;
-
-      if (this.finNum > this.initNum) {
-        this.initNum = this.finNum;
-      }
-
-
-
-    }
-
-    return this.initNum;
-  }
   constructor() { }
 
   ngOnInit(): void {

@@ -2,7 +2,7 @@
     <p> Author: {{quote.description}}</p>
     <p> Posted By: {{quote.author}} </p>
      <div>
-        <p>Posted on: {{quote.description|dateCount}} .</p>
+        <p>Posted on: {{quote.postDate|dateCount}} .</p>
         <app-count-input></app-count-input>
        </div>
        <button (click)='quoteDelete(true)' class="btn btn-danger">Delete Quote</button>
