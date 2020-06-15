@@ -4,8 +4,8 @@
         <div class="col md-6">
         <div *ngFor='let quote of quotes ;let i = index'>
             <div class="card">
-                <h3 appHighlight> {{quote.name}} </h3>
-                <div class="card">
+                <h3> {{quote.name}} </h3>
+                <div>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>   
                 </div>
             </div>
@@ -13,7 +13,7 @@
         </div>
         </div>
         <div class="col-md 6">
-        <div class="card-body">
+        <div>
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
         </div>

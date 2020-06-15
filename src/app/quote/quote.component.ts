@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Dont look at the clock, do what it does keep moving', 'Biron Lovine', new Date(2020,4,21)),
-    new Quote('Difficulties in your life do not come to destroy you but to help you realize your potential and future', 'LucycWigwa', new Date(2019,5,16)),
-    new Quote('There is nothing good that comes easy', 'Denzel Ochieng', new Date(2015,8,3)),
+   new Quote('Time may change me, but I cant trace time.', 'George', 'Marisa Lacsa'),
+   new Quote('The way to get started is to quit talking and begin doing.', 'Becky Innocent', 'Walt Disney'),
+   new Quote('Tell me and I forget. Teach me and I remember. Involve me and I learn', 'Agnes Norman', 'Benjamin Franklin')
   ];
 
   toggleDetails(index) {
