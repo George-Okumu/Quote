@@ -2,7 +2,8 @@
 Built on 15.06.2020: By:George Okumu
 
 ## Description
-An application that enables users to create their own quotes, have the quotes voted.
+- An application that enables users to create their own quotes, have the quotes voted.
+- Here is the live link(https://george-okumu.github.io/Quote/)
 
 ## Behaviour Driven Development
 1. The user is able to input name,quote,and author
