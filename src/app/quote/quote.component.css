@@ -1,3 +1,13 @@
+.container-fluid{
+    background-image: url("https://images.unsplash.com/photo-1523233233-a7d7229c7fbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-center4{
+    color:white;
+    font-size: 30px;
+}
 .text-center1{
     color: white;
     text-align: center;
@@ -9,12 +19,9 @@
     font-size: 20px;
     padding-bottom: 60px;
 }
-.container-fluid{
-    background-image: url("https://images.unsplash.com/photo-1523233233-a7d7229c7fbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 .detail{
     color: white;
+}
+.quote{
+    font-size: 19px;
 }

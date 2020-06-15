@@ -3,9 +3,11 @@
     <p class="text-center2">Find and add the best motivating,success quotes here.</p>
     <div class="row">
         <div class="col md-6">
+            <h3 class="text-center4">Here are a Few:</h3>
+            <hr>
         <div *ngFor='let quote of quotes ;let i = index'>
             <div class="detail">
-                <h3> {{quote.name}} </h3>
+                <p class="quote"> {{quote.name}} </p>
                 <div>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>   
                 </div>
