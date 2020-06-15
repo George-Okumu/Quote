@@ -1,0 +1,10 @@
+.container-fluid{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+.form-control{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
