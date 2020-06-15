@@ -1,8 +1,9 @@
-<div>
-    <div class="card">
-        <h6> posted by {{quote.description}}</h6>
-    </div>
-    <div class="card">
-        <h6> submitted by {{quote.author}} </h6>
-    </div>
+<div class="card-body">
+    <p> Author: {{quote.author}}</p>
+    <p> Publisher: {{quote.description}} </p>
+     <div>
+        <p>This quote was posted {{quote.postDate|dateCount}} .</p>
+        <app-count-input></app-count-input>
+       </div>
+       <button (click)='quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
 </div>
