@@ -1,9 +1,10 @@
 <div class="container-fluid">
-    <h1>Best Quotes</h1>
+    <h1 class="text-center1">Best Quotes</h1>
+    <p class="text-center2">Find and add the best motivating,success quotes here.</p>
     <div class="row">
         <div class="col md-6">
         <div *ngFor='let quote of quotes ;let i = index'>
-            <div class="card">
+            <div class="detail">
                 <h3> {{quote.name}} </h3>
                 <div>
                     <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>   
